@@ -84,7 +84,7 @@
     const [showAll, setShowAll] = useState(true);
 
     const whoIsHere = useMemo(() => {
-        if (!showAll) return name1();
+        if (!showAll()) return name1();
         return `${name1()} 和 ${name2()}`;
     });
 
